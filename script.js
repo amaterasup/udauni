@@ -8,7 +8,9 @@ async function fetchTime() {
         let data = await response.json();
 
         // Get current UTC time and offset
+        console.log(data.currentLocalTime);
         let date = new Date(data.currentLocalTime);
+        date = new Date();
         // Start the timer
         startTimer(date);
 
