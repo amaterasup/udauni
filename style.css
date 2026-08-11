@@ -1,0 +1,23 @@
+html, body{
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+body{
+    overflow: auto;
+    background: url("https://www.pixelstalk.net/wp-content/uploads/images5/Aesthetic-Space-Wallpaper-1080p.jpg") no-repeat;
+    background-size: cover;
+}
+.hitung-mundur{
+    color: white;
+    display: flex;
+    width: fit-content;
+    gap: 50px;
+    font-family: 'Orbitron';
+    margin: auto;
+    margin-top: 25vh;
+    font-size: 40px;
+}
