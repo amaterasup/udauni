@@ -1,4 +1,4 @@
-var hariH = new Date("Aug 13, 2026 12:00:00");
+var hariH = new Date("Aug 11, 2026 12:00:00");
 const hitung_mundur = document.getElementsByClassName("hitung-mundur")[0];
 fetchTime();
 async function fetchTime() {
@@ -8,6 +8,7 @@ async function fetchTime() {
         let data = await response.json();
 
         // Get current UTC time and offset
+        console.log(data.currentLocalTime);
         let date = new Date(data.currentLocalTime);
         date = new Date();
         // Start the timer
