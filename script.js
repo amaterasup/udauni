@@ -4,12 +4,12 @@ fetchTime();
 async function fetchTime() {
     try {
         // Fetch time from an API
-        let response = await fetch("https://www.timeapi.io/api/timezone/zone?timeZone=Asia%2FJakarta");
-        let data = await response.json();
+        // let response = await fetch("https://www.timeapi.io/api/timezone/zone?timeZone=Asia%2FJakarta");
+        // let data = await response.json();
 
-        // Get current UTC time and offset
-        console.log(data.currentLocalTime);
-        let date = new Date(data.currentLocalTime);
+        // // Get current UTC time and offset
+        // console.log(data.currentLocalTime);
+        // let date = new Date(data.currentLocalTime);
         date = new Date();
         // Start the timer
         startTimer(date);
