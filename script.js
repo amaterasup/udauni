@@ -10,16 +10,16 @@ async function fetchTime() {
         // Get current UTC time and offset
         console.log(data.currentLocalTime);
         let date = new Date(data.currentLocalTime);
-        date = new Date();
+        // date = new Date();
         // Start the timer
         startTimer(date);
 
     } catch (error) {
-        let date = new Date();
-        startTimer(date);
-        /*console.error("Error fetching time:", error);
+        // let date = new Date();
+        // startTimer(date);
+        console.error("Error fetching time:", error);
         document.getElementsByClassName("hitung-mundur")[0].innerText = "Jaringan Hilang";
-        document.getElementsByClassName("hitung-mundur")[0].style = "color:black;"*/
+        document.getElementsByClassName("hitung-mundur")[0].style = "color:black;"
     }
 }
 function startTimer(waktu) {
@@ -43,7 +43,6 @@ function startTimer(waktu) {
         return;
     }
     setInterval(UpdateTimer(), 1000);
-    fetchTime();
 }
 function cek(angka) {
     if (angka < 10) {
