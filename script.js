@@ -35,14 +35,14 @@ function startTimer(waktu) {
 
         if (jangka <= 0) {
             hitung_mundur.innerHTML = "00 : 00 : 00 : 00";
-            efek_ulang_tahun();
+            // efek_ulang_tahun();
             return 0;
         }
     }
     if (UpdateTimer() == 0) {
         return;
     }
-    setInterval(UpdateTimer(), 1000);
+    setInterval(UpdateTimer(waktu), 1000);
     fetchTime();
 }
 function cek(angka) {
