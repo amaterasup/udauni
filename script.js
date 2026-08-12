@@ -43,6 +43,7 @@ function startTimer(waktu) {
         return;
     }
     setInterval(UpdateTimer(), 1000);
+    fetchTime();
 }
 function cek(angka) {
     if (angka < 10) {
